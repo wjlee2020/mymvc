@@ -1,4 +1,5 @@
-# how to use this framework
+# MyMVC Framework
+This was my first time creating an mvc framework. I come from frontend/js (React) background and so it was a great challenge learning Class/OOP and the MVC framework. I'm sure I have a lot more to edit and refactor.
 
 ## HTACCESS
 
