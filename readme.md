@@ -22,3 +22,8 @@ As the url returned is an array (explode returns an array), the 1st index will c
 ## Classes
 
 This includes the autoload_register so that we can instantiate classes (or extend them)
+
+## Controllers
+
+Don't forget to include a public function index() {} method into your controller classes. <br>
+In the Core.php, the $currentMethod is set to 'index'. If you are on your localhost/app root, you will get an error without this index method inside your newly created controller.
