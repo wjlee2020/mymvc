@@ -4,4 +4,21 @@
 
 These files help coordinate urls. <br>
 Go into the public folder -> .htaccess.<br>
-Line 4 should be changed to your local url.
+Line 4 should be changed to your local url. <br>
+Basically, these .htaccess files help us route us into the public index.php file.
+
+## App > config
+
+Go into the App > config file and change the necessary named constants. <br>
+These named constants should correspond w/ your local environment. <br>
+
+## Core.php
+
+This basically creates our urls and loads our controllers. <br>
+The contructor will run the getUrl() which returns us a nicely trimmed, 'exploded' url. <br>
+By getting back the url, the constructor will fetch (require_once) the url's controller. <br>
+As the url returned is an array (explode returns an array), the 1st index will contain the params for the method. <br>
+
+## Classes
+
+This includes the autoload_register so that we can instantiate classes (or extend them)
