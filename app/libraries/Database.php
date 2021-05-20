@@ -74,7 +74,7 @@ class Database
     public function getSingleResultSet()
     {
         $this->executor();
-        return $this->stmt->fetch();
+        return $this->stmt->fetch(PDO::FETCH_OBJ);
     }
 
     //get row count
